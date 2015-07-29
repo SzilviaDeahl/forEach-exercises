@@ -1,0 +1,30 @@
+
+//iterate through an array and log each number on the way
+var myArray = [1,2,3,4,5];
+myArray.forEach(function (num) {
+  console.log(num);
+})
+
+//iterate through an array and
+//log results with a comma
+var result = "";
+['a', 'b', 'z', 'x'].forEach(function (word, i, array) {
+  if (i < array.length-1){
+  result+= word + ',';
+  } else {
+  result+= word;
+  }
+})
+console.log(result);
+
+//create an array with objects inside
+//for each object in the array
+//concatenate the object's name and age properties
+//log them out
+
+var array = [{name:'Tom', age: 34},
+{name: 'Betty', age: 37}];
+
+array.forEach(function (person) {
+  console.log(person.name + " " + person.age);
+})
